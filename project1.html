@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Design Work</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .project-card {
+            max-width: 800px;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin: 20px;
+        }
+        
+        .project-image {
+            height: 400px;
+            overflow: hidden;
+        }
+        
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .project-image:hover img {
+            transform: scale(1.03);
+        }
+        
+        .project-details {
+            padding: 25px;
+        }
+        
+        .project-title {
+            font-size: 28px;
+            margin: 0 0 10px 0;
+            color: #333;
+        }
+        
+        .project-description {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .project-meta {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .pro_img {
+            width: 70px;
+            height: 10px;
+        }
+        
+        .project-tag {
+            background: #6c5ce7;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 600px) {
+            .project-image {
+                height: 300px;
+            }
+            
+            .project-title {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="project-card">
+        <div class="project-image">
+            <img src="images/car.jpg" class="pro_img" alt="My Design Project">
+        </div>
+        <div class="project-details">
+            <h1 class="project-title">Poster Design</h1>
+            <p class="project-description">
+                A sample poster designed for Bugati new car in 2023.
+            </p>
+            
+        </div>
+    </div>
+</body>
+</html>
